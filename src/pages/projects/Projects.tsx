@@ -1,3 +1,3 @@
 export const Projects = () => {
-    return <>all projects</>
-}
+  return <>all projects</>;
+};

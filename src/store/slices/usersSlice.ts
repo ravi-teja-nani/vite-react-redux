@@ -1,27 +1,25 @@
-import { createSlice } from '@reduxjs/toolkit'
-import type { PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 export interface UsersSlice {
   user: {
-    email: string
-    firstName: string
-    lastName: string
-  }
+    email: string;
+    firstName: string;
+    lastName: string;
+  };
 }
 
 const initialState: UsersSlice = {
   user: {
-    email: '',
-    firstName: '',
-    lastName: ''
-  }
-}
+    email: "",
+    firstName: "",
+    lastName: "",
+  },
+};
 
 export const usersSlice = createSlice({
-  name: 'user',
+  name: "user",
   initialState,
-  reducers: {
-  },
-})
+  reducers: {},
+});
 
-export default usersSlice.reducer
+export default usersSlice.reducer;

@@ -1,6 +1,6 @@
-import React from 'react';
-import { useAuth } from '../../context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useAuth } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export const Login = () => {
   const { login } = useAuth();
@@ -8,7 +8,7 @@ export const Login = () => {
 
   const handleLogin = () => {
     login();
-    navigate('/');
+    navigate("/");
   };
 
   return (
